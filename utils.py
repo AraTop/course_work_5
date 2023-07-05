@@ -50,6 +50,23 @@ class Search:
 
       return data_returned
       
-search = Search('Python',"ООО Дубайт")
-x = search.head_hunter()
-print(x)
+
+class DBManager:
+   def __init__(self) -> None:
+      pass
+
+   def get_companies_and_vacancies_count():
+      pass
+
+   def get_all_vacancies():
+      pass
+
+   def get_avg_salary():
+      pass
+
+   def get_vacancies_with_higher_salary():
+      pass
+
+   def get_vacancies_with_keyword():
+      pass 
+   

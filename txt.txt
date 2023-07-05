@@ -1,12 +1,10 @@
-1.  https://hh.ru/vacancy/82617424?from=vacancy_search_list&query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%20Python
-2.  https://hh.ru/vacancy/82888245?from=vacancy_search_list&query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%20Python
-3.  https://hh.ru/vacancy/82877347?from=vacancy_search_list&query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%20Python
-4.  https://hh.ru/vacancy/82680079?from=vacancy_search_list&query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%20Python
-5.  https://hh.ru/vacancy/82922513?from=vacancy_search_list&query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%20Python
-6.  https://hh.ru/vacancy/82844590?from=vacancy_search_list&query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%20Python
-7.  https://hh.ru/vacancy/81922420?from=vacancy_search_list&query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%20Python
-8.  https://hh.ru/vacancy/82039618?from=vacancy_search_list&query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%20Python
-9.  https://hh.ru/vacancy/82417354?from=vacancy_search_list&query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%20Python
-10. https://hh.ru/vacancy/71147348?from=vacancy_search_list&query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%20Python
-
-8642172
+1.  -https://hh.ru/vacancy/82617424?from=vacancy_search_list&query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%20Python
+2.  -https://hh.ru/vacancy/82986443?from=vacancy_search_list&query=python
+3.  -https://hh.ru/vacancy/82703691?from=vacancy_search_list&query=python 
+4.  -https://hh.ru/vacancy/82680079?from=vacancy_search_list&query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%20Python
+5.  -https://hh.ru/vacancy/82992651?from=vacancy_search_list&query=python 
+6.  -https://hh.ru/vacancy/82904137?from=vacancy_search_list&query=python
+7.  -https://hh.ru/vacancy/82995371?from=vacancy_search_list&query=python  
+8.  -https://hh.ru/vacancy/82039618?from=vacancy_search_list&query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%20Python
+9.  -https://hh.ru/vacancy/82417354?from=vacancy_search_list&query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%20Python
+10. -https://hh.ru/vacancy/71147348?from=vacancy_search_list&query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%20Python
