@@ -1,6 +1,8 @@
 import psycopg2
 from utils import Search
 
+#перед запуском main.py, измените данные на свои. database = название файла где будут все вакансии
+
 host = 'localhost'
 port = '5432'  
 database = 'db_vacancies'  
@@ -37,27 +39,28 @@ CREATE TABLE vacancies (
    employment VARCHAR(255),
    alternate_url VARCHAR(255),
    requirement VARCHAR(255),
-   experience VARCHAR(255)
+   experience VARCHAR(255),
+   name_company VARCHAR(255)
 );
 '''
 cursor.execute(create_table_query)
 
 insert_data_query = '''
-INSERT INTO vacancies (name, price, employment, alternate_url, requirement, experience)
-VALUES (%s, %s, %s, %s, %s, %s);
+INSERT INTO vacancies (name, price, employment, alternate_url, requirement, experience, name_company)
+VALUES (%s, %s, %s, %s, %s, %s, %s);
 '''
 
 # Данные для вставки
-search1 = Search('Python',"АО Рут Код")
-search2 = Search('Python',"ООО ЭС-АЙ Безопасность")
-search3 = Search('Python',"КИБЕР-РОМ")
-search4 = Search('Python',"Университет искусственного интеллекта")
-search5 = Search('Python',"Модульбанк")
-search6 = Search('Python',"EFT GROUP")
-search7 = Search('Python',"Digital Reputation")
-search8 = Search('Python',"БО-ЭНЕРГО")
-search9 = Search('Python',"Decart IT-production")
-search10 = Search('Python',"ООО Дубайт")
+search1 = Search("АО Рут Код")
+search2 = Search("ООО ЭС-АЙ Безопасность")
+search3 = Search("КИБЕР-РОМ")
+search4 = Search("Университет искусственного интеллекта")
+search5 = Search("Модульбанк")
+search6 = Search("EFT GROUP")
+search7 = Search("Digital Reputation")
+search8 = Search("БО-ЭНЕРГО")
+search9 = Search("Decart IT-production")
+search10 = Search("ООО Дубайт")
 
 data = [search1.head_hunter(), search2.head_hunter(), search3.head_hunter(), search4.head_hunter(), search5.head_hunter(), search6.head_hunter(), search7.head_hunter(), search8.head_hunter(), search9.head_hunter(), search10.head_hunter()]
 
@@ -70,7 +73,8 @@ for items in data:
         item['employment'],
         item['alternate_url'],
         item['requirement'],
-        item['experience']
+        item['experience'],
+        item["name_company"]
       )
       cursor.execute(insert_data_query, record)
 
