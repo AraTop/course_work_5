@@ -1,13 +1,15 @@
+import configparser
 import psycopg2
 from utils import Search
 
-#перед запуском main.py, измените данные на свои. database = название файла где будут все вакансии
+config = configparser.ConfigParser()
+config.read('config.ini')
 
-host = 'localhost'
-port = '5432'  
-database = 'db_vacancies'  
-user = 'postgres'  
-password = 'Komaz5357abv'  
+host = config.get('postgresql', 'host')
+database = config.get('postgresql', 'database')
+user = config.get('postgresql', 'user')
+password = config.get('postgresql', 'password')
+port = config.get('postgresql', 'port')
 
 conn = psycopg2.connect(
    host=host,
@@ -50,33 +52,42 @@ INSERT INTO vacancies (name, price, employment, alternate_url, requirement, expe
 VALUES (%s, %s, %s, %s, %s, %s, %s);
 '''
 
-# Данные для вставки
-search1 = Search("АО Рут Код")
-search2 = Search("ООО ЭС-АЙ Безопасность")
-search3 = Search("КИБЕР-РОМ")
-search4 = Search("Университет искусственного интеллекта")
-search5 = Search("Модульбанк")
-search6 = Search("EFT GROUP")
-search7 = Search("Digital Reputation")
-search8 = Search("БО-ЭНЕРГО")
-search9 = Search("Decart IT-production")
-search10 = Search("ООО Дубайт")
+def data_for_the_table():
+   """Данные для вставки в таблицу"""
 
-data = [search1.head_hunter(), search2.head_hunter(), search3.head_hunter(), search4.head_hunter(), search5.head_hunter(), search6.head_hunter(), search7.head_hunter(), search8.head_hunter(), search9.head_hunter(), search10.head_hunter()]
+   search1 = Search("АО Рут Код")
+   search2 = Search("ООО ЭС-АЙ Безопасность")
+   search3 = Search("КИБЕР-РОМ")
+   search4 = Search("Университет искусственного интеллекта")
+   search5 = Search("Модульбанк")
+   search6 = Search("EFT GROUP")
+   search7 = Search("Digital Reputation")
+   search8 = Search("БО-ЭНЕРГО")
+   search9 = Search("Decart IT-production")
+   search10 = Search("ООО Дубайт")
 
-# Выполнение SQL-запроса для вставки данных в цикле
-for items in data:
-   for item in items:
-      record = (
-        item['name'],
-        item['price'],
-        item['employment'],
-        item['alternate_url'],
-        item['requirement'],
-        item['experience'],
-        item["name_company"]
-      )
-      cursor.execute(insert_data_query, record)
+   data = [search1.head_hunter(), search2.head_hunter(), search3.head_hunter(), search4.head_hunter(), search5.head_hunter(), search6.head_hunter(), search7.head_hunter(), search8.head_hunter(), search9.head_hunter(), search10.head_hunter()]
+   return data
+
+data = data_for_the_table()
+
+def output_sql(data):
+   """Выполнение SQL-запроса для вставки данных в цикле"""
+
+   for items in data:
+      for item in items:
+         record = (
+         item['name'],
+         item['price'],
+         item['employment'],
+         item['alternate_url'],
+         item['requirement'],
+         item['experience'],
+         item["name_company"]
+         )
+         cursor.execute(insert_data_query, record)
+
+output_sql(data)
 
 conn.commit()
 cursor.close()
